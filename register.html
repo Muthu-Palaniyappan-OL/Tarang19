@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141375770-2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-141375770-2');
+        </script>
+
+      <title>Register - Tarang 2K19</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <noscript>
+         <link rel="stylesheet" href="assets/css/noscript.css" />
+      </noscript>
+      <style type="text/css">
+      </style>
+      <style> 
+
+#panel {
+  display: none;
+}
+</style>
+      <style>
+         /* width */
+         ::-webkit-scrollbar {
+         width: 10px;
+         }
+         /* Track */
+         ::-webkit-scrollbar-track {
+         box-shadow: inset 0 0 5px grey; 
+         border-radius: 10px;
+         }
+         /* Handle */
+         ::-webkit-scrollbar-thumb {
+         background: -webkit-linear-gradient(#252A61,#502b80, #9e3377,#b01075,#cb3160,#fb6a4b); 
+         border-radius: 10px;
+         }
+         /* Handle on hover */
+         ::-webkit-scrollbar-thumb:hover {
+         background: white; 
+         }
+         .glow {
+         text-transform: uppercase;
+         background: linear-gradient(#252A61,#502b80, #9e3377,#b01075,#cb3160,#fb6a4b);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         font-size: 9vw;
+         -webkit-animation: glow 1s ease-in-out infinite alternate;
+         -moz-animation: glow 1s ease-in-out infinite alternate;
+         animation: glow 1s ease-in-out infinite alternate;
+         }
+         @-webkit-keyframes glow {
+         from {
+         text-shadow: linear-gradient(#252A61,#502b80, #9e3377,#b01075,#cb3160,#fb6a4b);
+         }
+         to {
+         text-shadow: 0 0 80px #fff;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <div id="particle"></div>
+      <div id="overlay">
+      <br>
+      <h1  align="center"  class="glow"><a href="https://tarang19.com"><img src="images/schoollogo.png" style="height: auto;width: 20%" align="left"></a>Register<a href="https://tarang19.com"><img src="images/logo.png" style="height: auto;width: 15%;" align="right"></a></h1>
+      <br>
+      <div style="-moz-transform: translateY(0.25rem);
+         -webkit-transform: translateY(0.25rem);
+         -ms-transform: translateY(0.25rem);
+         transform: translateY(0.25rem);
+         -moz-transition: opacity 0.325s ease-in-out, -moz-transform 0.325s ease-in-out;
+         -webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
+         -ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
+         transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
+         padding: 4.5rem 2.5rem 1.5rem 2.5rem;
+         position: relative;
+         width: 75rem;
+         background-color:#010312;
+         background: -webkit-linear-gradient(#252A61,#502b80, #9e3377,#b01075,#cb3160,#fb6a4b);
+         max-width: 100%;
+         border-radius: 4px; margin: auto;">
+         <form method="POST" name="register" id="register" onsubmit="redirect()">
+            <div class="field">
+               <label for="demo-category"><font style="font-weight: bold;">School</font><font style="font-weight:bold;">*</font><font style="font-weight: bold;">:</font></label>
+               <input type="text" name="a1" id="a1" value="" required />
+               <br>
+               <label for="demo-category"><font style="font-weight: bold;">Branch:</font>(Optional)</label>
+               <input type="text" name="a2" id="a2" value=""/>
+               <br>
+               <label for="demo-category"><font style="font-weight: bold;">Student Incharge:</font><font style="font-weight:bold;">*</font><font style="font-weight: bold;">:</font></label>
+               <input type="text" name="a3" id="a3" value="" required  />
+               <br>
+               <label for="demo-category"><font style="font-weight: bold;">Contact Number Of Student Incharge:</font></label>
+               <input type="tel" name="a4" id="a4" value="" pattern="[0-9]{10}" />
+               <br>
+               <label for="demo-category"><font style="font-weight: bold;">Teacher Incharge</font><font style="font-weight:bold;">*</font><font style="font-weight: bold;">:</font></label>
+               <input type="text" name="a5" id="a5" value="" required />
+               <br>
+               <label for="demo-category"><font style="font-weight: bold;">Contact Number Of Teacher Incharge</font><font style="font-weight:bold;">*</font><font style="font-weight: bold;">:</font></label>
+               <input type="tel" name="a6" id="a6" value="" pattern="[0-9]{10}" required />
+               <br>
+               <label for="demo-category"><font style="font-weight: bold;">Email</font><font style="font-weight:bold;">*</font><font style="font-weight: bold;">:</font></label>
+               <input type="email" name="a7" id="a5" value="" pattern=".+@.+.com" required />
+               <br>
+               <label for="demo-category"><font style="font-weight: bold;">Which Events Does Your School Want To Participate In?</font><font style="font-weight:bold;">*</font>(Select All That Apply)</label>
+               <input type="checkbox" id="greenscreen" name="greenscreen" value="1" onchange="onCheckboxChanged(this.checked)">
+               <label for="greenscreen">Green Screen</label>
+               <label id="hiddenRow" style="display: none;" for="demo-category"><br><br>Enter Number of Participants for Green Screen:<input type="text" name="demo-name" id="part" value="" placeholder="" onblur="CheckNo(this)"/></label>
+               <br id="no" style="display: none;">
+               <label for="part1" id="part1" style="display: none;">Participant 1:<input type="text" name="gsp1" id="gsp1" placeholder="Enter Name of Participant 1" /></label>
+               <label for="part2" id="part2" style="display: none;">Participant 2:<input type="text" name="gsp2" id="gsp2"placeholder="Enter Name of Participant 2" /></label>
+               <br><br>
+               <input type="checkbox" id="shipwreck" name="shipwreck" value="1" onchange="onCheckboxChanged1(this.checked)">
+               <label for="shipwreck">Shipwreck</label>
+               <label id="hiddenRow1" style="display: none;" for="demo-category"><br><br>Enter Number of Participants:<input type="text" name="demo-name" id="part" value="" placeholder="" onblur="CheckNo1(this)"/></label>
+               <br id="no33" style="display: none;">
+               <label for="part3" id="part3" style="display: none;">Participant 1:<input type="text" name="swp1" id="swp1" placeholder="Enter Name of Participant 1" /></label>
+               <label for="part4" id="part4" style="display: none;">Participant 2:<input type="text" name="swp2" id="swp2" placeholder="Enter Name of Participant 2" /></label>
+               <br id="no2" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="adzap" name="adzap" value="1" onchange="onCheckboxChanged2(this.checked)">
+               <label for="adzap">Adzap</label>
+               <label id="hiddenRow2" style="display: none;" for="demo-category"><br><br>Enter Number of Participants:<input type="text" name="demo-name" id="part" value="" placeholder="" onblur="CheckNo2(this)"/></label>
+               <br id="no34" style="display: none;">
+               <label for="part5" id="part5" style="display: none;">Participant 1:<input type="text" name="azp1" id="azp1" placeholder="Enter Name of Participant 1" /></label>
+               <label for="part6" id="part6" style="display: none;">Participant 2:<input type="text" name="azp2" id="azp2" placeholder="Enter Name of Participant 2" /></label>
+               <label for="part7" id="part7" style="display: none;">Participant 3:<input type="text" name="azp3" id="azp3" placeholder="Enter Name of Participant 3" /></label>
+               <label for="part8" id="part8" style="display: none;">Participant 4:<input type="text" name="azp4" id="azp4" placeholder="Enter Name of Participant 4" /></label>
+               <label for="part9" id="part9" style="display: none;">Participant 5:<input type="text" name="azp5" id="azp5" placeholder="Enter Name of Participant 5" /></label>
+               <label for="part10" id="part10" style="display: none;">Participant 6:<input type="text" name="azp6" id="azp6" placeholder="Enter Name of Participant 6" /></label>
+               <br id="no3" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="blockandtackle" name="blockandtackle" value="1" onchange="onCheckboxChanged3(this.checked)">
+               <label for="blockandtackle">Block And Tackle</label>
+               <label id="hiddenRow3" style="display: none;" for="demo-category"><br><br>Enter Number of Participants:<input type="text" name="demo-name" id="part" value="" placeholder="" onblur="CheckNo3(this)"/></label>
+               <br id="no35" style="display: none;">
+               <label for="part11" id="part11" style="display: none;">Participant 1:<input type="text" name="btp1" placeholder="Enter Name of Participant 1" /></label>
+               <label for="part12" id="part12" style="display: none;">Participant 2:<input type="text" name="btp2" placeholder="Enter Name of Participant 2" /></label>
+               <br id="no4" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="channelsurfing" name="channelsurfing" value="1" onchange="onCheckboxChanged4(this.checked)">
+               <label for="channelsurfing">Channel Surfing</label>
+               <label id="hiddenRow4" style="display: none;" for="demo-category"><br><br>Enter Number of Participants:<input type="text" name="demo-name" id="part" value="" placeholder="" onblur="CheckNo4(this)"/></label>
+               <br id="no5" style="display: none;">
+               <label for="part13" id="part13" style="display: none;">Participant 1:<input type="text" name="csp1" placeholder="Enter Name of Participant 1" /></label>
+               <label for="part14" id="part14" style="display: none;">Participant 2:<input type="text" name="csp2" placeholder="Enter Name of Participant 2" /></label>
+               <label for="part15" id="part15" style="display: none;">Participant 3:<input type="text" name="csp3" placeholder="Enter Name of Participant 3" /></label>
+               <label for="part16" id="part16" style="display: none;">Participant 4:<input type="text" name="csp4" placeholder="Enter Name of Participant 4" /></label>
+               <label for="part17" id="part17" style="display: none;">Participant 5:<input type="text" name="csp5" placeholder="Enter Name of Participant 5" /></label>
+               <label for="part18" id="part18" style="display: none;">Participant 6:<input type="text" name="csp6" placeholder="Enter Name of Participant 6" /></label>
+               <br id="no6" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="surpriseevent" name="surpriseevent" value="1" onchange="onCheckboxChanged5(this.checked)">
+               <label for="surpriseevent">Surprise Event</label>
+               <label id="hiddenRow5" style="display: none;" for="demo-category"><br><br>Enter Number of Participants:<input type="text" name="demo-name" id="part" value="" placeholder="" onblur="CheckNo5(this)"/></label>
+               <br id="no7" style="display: none;">
+               <label for="part19" id="part19" style="display: none;">Participant 1:<input type="text" name="sep1" placeholder="Enter Name of Participant 1" /></label>
+               <label for="part20" id="part20" style="display: none;">Participant 2:<input type="text" name="sep2" placeholder="Enter Name of Participant 2" /></label>
+               <br id="no8" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="jam" name="jam" value="1" onchange="onCheckboxChanged6(this.checked)">
+               <label for="jam">Just A Minute</label>
+               <label id="hiddenRow6" style="display: none;" for="demo-category"><br><br>Enter Name Of The Participant:<input type="text" name="jamp1" id="part" value="" placeholder="" /></label>
+               <br id="no9" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="fifa" name="fifa" value="1" onchange="onCheckboxChanged7(this.checked)">
+               <label for="fifa">FIFA</label>
+               <label id="hiddenRow7" style="display: none;" for="demo-category"></label>
+               <br id="no10" style="display: none;">
+               <label for="part21" id="part21" style="display: none;">Participant 1:<input type="text" name="ffp1" placeholder="Enter Name of Participant 1" /></label>
+               <label for="part22" id="part22" style="display: none;">Participant 2:<input type="text" name="ffp2" placeholder="Enter Name of Participant 2" /></label>
+               <br id="no11" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="slamdunk" value="1" name="slamdunk" onchange="onCheckboxChanged8(this.checked)">
+               <label for="slamdunk">Slam Dunk</label>
+               <label id="hiddenRow8" style="display: none;" for="demo-category"><br><br><font style="font-weight: bold;">Boys Team:</font><br>Player 1:<input type="text" name="sdbp1" placeholder="Enter Name of Player 1" /><br>Player 2:<input type="text" name="sdbp2" placeholder="Enter Name of Player 2" /><br>Player 3:<input type="text" name="sdbp3" placeholder="Enter Name of Player 3" /><br>Substitute 1:<input type="text" name="sdbs1" placeholder="Enter Name of Substitute 1" /><br>Substitute 2:<input type="text" name="sdbs2" placeholder="Enter Name of Substitute 2" /><br><br><font style="font-weight: bold;">Girls Team:</font><br>Player 1:<input type="text" name="sdgp1" placeholder="Enter Name of Player 1" /><br>Player 2:<input type="text" name="sdgp2" placeholder="Enter Name of Player 2" /><br>Player 3:<input type="text" name="sdgp3" placeholder="Enter Name of Player 3" /><br>Substitute 1:<input type="text" name="sdgs1" placeholder="Enter Name of Substitute 1" /><br>Substitute 2:<input type="text" name="sdgs2" placeholder="Enter Name of Substitute 2" /></label>
+               <br id="no12" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="futsal" value="1" name="futsal" onchange="onCheckboxChanged9(this.checked)">
+               <label for="futsal">Futsal</label>
+               <label id="hiddenRow9" style="display: none;" for="demo-category"><br><br>Player 1:<input type="text" name="fsp1" placeholder="Enter Name of Player 1" /><br>Player 2:<input type="text" name="fsp2" placeholder="Enter Name of Player 2" /><br>Player 3:<input type="text" name="fsp3" placeholder="Enter Name of Player 3" /><br>Player 4:<input type="text" name="fsp4" placeholder="Enter Name of Player 4" /><br>Player 5:<input type="text" name="fsp5" placeholder="Enter Name of Player 5" /><br>Substitute 1:<input type="text" name="fss1" placeholder="Enter Name of Substitute 1" /><br>Substitute 2:<input type="text" name="fss2" placeholder="Enter Name of Substitute 2" /><br>Substitute 3:<input type="text" name="fss3" placeholder="Enter Name of Substitute 3" /></label>
+               <br id="no13" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="cricket" value="1" name="cricket" onchange="onCheckboxChanged10(this.checked)">
+               <label for="cricket">Ee Saala Cup Namde</label>
+               <label id="hiddenRow10" style="display: none;" for="demo-category"><br><br>Player 1:<input type="text" name="cp1" placeholder="Enter Name of Player 1" /><br>Player 2:<input type="text" name="cp2" placeholder="Enter Name of Player 2" /><br>Player 3:<input type="text" name="cp3" placeholder="Enter Name of Player 3" /><br>Player 4:<input type="text" name="cp4" placeholder="Enter Name of Player 4" /><br>Player 5:<input type="text" name="cp5" placeholder="Enter Name of Player 5" /><br>Player 6:<input type="text" name="cp6" placeholder="Enter Name of Player 6" /><br>Player 7:<input type="text" name="cp7" placeholder="Enter Name of Player 7" /><br>Player 8:<input type="text" name="cp8" placeholder="Enter Name of Player 8" /></label>
+               <br id="no14" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="carnaticmusic" value="1" name="carnaticmusic" onchange="onCheckboxChanged11(this.checked)">
+               <label for="carnaticmusic">Sarvam Thaala Mayam</label>
+               <label id="hiddenRow11" style="display: none;" for="demo-category"><br><br>Enter Number of Participants:<input type="text" name="demo-name" id="part" value="" placeholder="" onblur="CheckNo11(this)"/></label>
+               <br id="no15" style="display: none;">
+               <label for="part23" id="part23" style="display: none;">Participant 1:<input type="text" name="stmp1" placeholder="Enter Name of Participant 1" /></label>
+               <label for="part24" id="part24" style="display: none;">Participant 2:<input type="text" name="stmp2" placeholder="Enter Name of Participant 2" /></label>
+               <label for="part25" id="part25" style="display: none;">Participant 3:<input type="text" name="stmp3" placeholder="Enter Name of Participant 3" /></label>
+               <label for="part26" id="part26" style="display: none;">Participant 4:<input type="text" name="stmp4" placeholder="Enter Name of Participant 4" /></label>
+               <br id="no16" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="shortfilm" value="1" name="shortfilm" onchange="onCheckboxChanged12(this.checked)">
+               <label for="shortfilm">Short Film</label>
+               <label id="hiddenRow12" style="display: none;" for="demo-category"><br><br>Participant 1:<input type="text" name="sfp1" placeholder="Enter Name of Participant 1" /><br>Participant 2:<input type="text" name="sfp2" placeholder="Enter Name of Participant 2" /><br>Participant 3:<input type="text" name="sfp3" placeholder="Enter Name of Participant 3" /><br>Participant 4:<input type="text" name="sfp4" placeholder="Enter Name of Participant 4" /><br>Participant 5:<input type="text" name="sfp5" placeholder="Enter Name of Participant 5" /></label>
+               <br id="no17" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="photography" value="1" name="photography" onchange="onCheckboxChanged13(this.checked)">
+               <label for="photography">Photography</label>
+               <label id="hiddenRow13" style="display: none;" for="demo-category"></label>
+               <label for="part27" id="part27" style="display: none;">Participant 1:<input type="text" name="pp1" placeholder="Enter Name of Participant 1" /></label>
+               <label for="part28" id="part28" style="display: none;">Participant 2:<input type="text" name="pp2" placeholder="Enter Name of Participant 2" /></label>
+               <br id="no18" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="spinayarn" value="1" name="spinayarn" onchange="onCheckboxChanged14(this.checked)">
+               <label for="spinayarn">Spin A Yarn</label>
+               <label id="hiddenRow14" style="display: none;" for="demo-category"><br><br>Enter Number of Participants:<input type="text" name="demo-name" id="part" value="" placeholder="" onblur="CheckNo14(this)"/></label>
+               <br id="no19" style="display: none;">
+               <label for="part29" id="part29" style="display: none;">Participant 1:<input type="text" name="syp1" placeholder="Enter Name of Participant 1" /></label>
+               <label for="part30" id="part30" style="display: none;">Participant 2:<input type="text" name="syp2" placeholder="Enter Name of Participant 2" /></label>
+               <br id="no20" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="punaaku" value="1" name="punaaku" onchange="onCheckboxChanged15(this.checked)">
+               <label for="punaaku">Pun-Aaku</label>
+               <label id="hiddenRow15" style="display: none;" for="demo-category"></label>
+               <label for="part31" id="part31" style="display: none;">Participant 1:<input type="text" name="pup1" placeholder="Enter Name of Participant 1" /></label>
+               <label for="part32" id="part32" style="display: none;">Participant 2:<input type="text" name="pup2" placeholder="Enter Name of Participant 2" /></label>
+               <label for="part33" id="part33" style="display: none;">Participant 3:<input type="text" name="pup3" placeholder="Enter Name of Participant 3" /></label>
+               <label for="part34" id="part34" style="display: none;">Participant 4:<input type="text" name="pup4" placeholder="Enter Name of Participant 4" /></label>
+               <br id="no21" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="treasurehunt" value="1" name="treasurehunt" onchange="onCheckboxChanged16(this.checked)">
+               <label for="treasurehunt">Treasure Hunt</label>
+               <label id="hiddenRow16" style="display: none;" for="demo-category"></label>
+               <label for="part35" id="part35" style="display: none;">Participant 1:<input type="text" name="thp1" placeholder="Enter Name of Participant 1" /></label>
+               <label for="part36" id="part36" style="display: none;">Participant 2:<input type="text" name="thp2" placeholder="Enter Name of Participant 2" /></label>
+               <label for="part37" id="part37" style="display: none;">Participant 3:<input type="text" name="thp3" placeholder="Enter Name of Participant 3" /></label>
+               <br id="no22" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="monoacting" value="1" name="monoacting" onchange="onCheckboxChanged17(this.checked)">
+               <label for="monoacting">Mono Acting</label>
+               <label id="hiddenRow17" style="display: none;" for="demo-category"><br><br>Enter Number of Participants:<input type="text" name="demo-name" id="part" value="" placeholder="" onblur="CheckNo17(this)"/></label>
+               <br id="no23" style="display: none;">
+               <label for="part38" id="part38" style="display: none;">Participant 1:<input type="text" name="mp1" placeholder="Enter Name of Participant 1" /></label>
+               <label for="part39" id="part39" style="display: none;">Participant 2:<input type="text" name="mp2" placeholder="Enter Name of Participant 2" /></label>
+               <br id="no24" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="stepup" value="1" name="stepup" onchange="onCheckboxChanged18(this.checked)">
+               <label for="stepup">Step Up</label>
+               <label id="hiddenRow18" style="display: none;" for="demo-category"></label>
+               <br id="no25" style="display: none;">
+               <label for="part40" id="part40" style="display: none;">Participant 1:<input type="text" name="sp1" placeholder="Enter Name of Participant 1" /></label>
+               <label for="part41" id="part41" style="display: none;">Participant 2:<input type="text" name="sp2" placeholder="Enter Name of Participant 2" /></label>
+               <label for="part42" id="part42" style="display: none;">Participant 3:<input type="text" name="sp3" placeholder="Enter Name of Participant 3" /></label>
+               <label for="part43" id="part43" style="display: none;">Participant 4:<input type="text" name="sp4" placeholder="Enter Name of Participant 4" /></label>
+               <label for="part44" id="part44" style="display: none;">Participant 5:<input type="text" name="sp5" placeholder="Enter Name of Participant 5" /></label>
+               <label for="part45" id="part45" style="display: none;">Participant 6:<input type="text" name="sp6" placeholder="Enter Name of Participant 6"/></label>
+               <br id="no26" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="band" value="1" name="band" onchange="onCheckboxChanged19(this.checked)">
+               <label for="band">Band</label>
+               <label id="hiddenRow19" style="display: none;" for="demo-category"><br><br>Enter Number of Participants:<input type="text" name="demo-name" id="part" value="" placeholder="" onblur="CheckNo19(this)"/></label>
+               <br id="no27" style="display: none;">
+               <label for="part46" id="part46" style="display: none;">Participant 1:<input type="text" name="bp1" placeholder="Enter Name of Participant 1" /></label>
+               <label for="part47" id="part47" style="display: none;">Participant 2:<input type="text" name="bp2" placeholder="Enter Name of Participant 2" /></label>
+               <label for="part48" id="part48" style="display: none;">Participant 3:<input type="text" name="bp3" placeholder="Enter Name of Participant 3" /></label>
+               <label for="part49" id="part49" style="display: none;">Participant 4:<input type="text" name="bp4" placeholder="Enter Name of Participant 4" /></label>
+               <label for="part50" id="part50" style="display: none;">Participant 5:<input type="text" name="bp5" placeholder="Enter Name of Participant 5" /></label>
+               <label for="part51" id="part51" style="display: none;">Participant 6:<input type="text" name="bp6" placeholder="Enter Name of Participant 6" /></label>
+               <br id="no28" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="memecreation" value="1" name="memecreation" onchange="onCheckboxChanged20(this.checked)">
+               <label for="memecreation">Meme Creation</label>
+               <label id="hiddenRow20" style="display: none;" for="demo-category"><br><br>Enter Number of Participants:<input type="text" name="demo-name" id="part" value="" placeholder="" onblur="CheckNo20(this)"/></label>
+               <br id="no29" style="display: none;">
+               <label for="part52" id="part52" style="display: none;">Participant 1:<input type="text" name="mcp1" placeholder="Enter Name of Participant 1" /></label>
+               <label for="part53" id="part53" style="display: none;">Participant 2:<input type="text" name="mcp2" placeholder="Enter Name of Participant 2" /></label>
+               <label for="part54" id="part54" style="display: none;">Participant 3:<input type="text" name="mcp3" placeholder="Enter Name of Participant 3" /></label>
+               <label for="part55" id="part55" style="display: none;">Participant 4:<input type="text" name="mcp4" placeholder="Enter Name of Participant 4" /></label>
+               <br id="no30" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="moviereviews" value="1" name="moviereviews" onchange="onCheckboxChanged21(this.checked)">
+               <label for="moviereviews">Movie Reviews</label>
+               <label id="hiddenRow21" style="display: none;" for="demo-category"><br><br>Enter Number of Participants:<input type="text" name="demo-name" id="part" value="" placeholder="" onblur="CheckNo21(this)"/></label>
+               <br id="no31" style="display: none;">
+               <label for="part56" id="part56" style="display: none;">Participant 1:<input type="text" name="mrp1" placeholder="Enter Name of Participant 1" /></label>
+               <label for="part57" id="part57" style="display: none;">Participant 2:<input type="text" name="mrp2" placeholder="Enter Name of Participant 2" /></label>
+               <br id="no32" style="display: none;">
+               <br><br>
+               <input type="checkbox" id="creativewriting" value="1" name="creativewriting" onchange="onCheckboxChanged22(this.checked)">
+               <label for="creativewriting">Creative Writing</label>
+               <label id="hiddenRow22" style="display: none;" for="demo-category"><br><br>Enter Name Of The Participant:<input type="text" name="wdp1" id="part" value="" placeholder="" /></label>
+               <br>
+               <br>
+               <script type="text/javascript">
+                  function CheckNo(sender){
+                      if(!isNaN(sender.value)){
+                          if(sender.value > 2 )
+                              sender.value = 2;
+                          if(sender.value < 1 )
+                              sender.value = 1;
+                      }else{
+                            sender.value = 1;
+                      }
+                      if (sender.value==1) {
+                        $("#part1").fadeIn(1500 ,'linear');//To Show
+                        $("#part2").fadeOut(900 ,'linear');
+                      }
+                      else{
+                        $("#part2").fadeIn(1500 ,'linear');
+                        $("#part1").fadeIn(1500 ,'linear');
+                      }
+                  }
+                  function CheckNo1(sender){
+                      if(!isNaN(sender.value)){
+                          if(sender.value > 2 )
+                              sender.value = 2;
+                          if(sender.value < 1 )
+                              sender.value = 1;
+                      }else{
+                            sender.value = 1;
+                      }
+                      if (sender.value==1) {
+                        $("#part3").fadeIn(1500 ,'linear');//To Show
+                        $("#part4").fadeOut(900 ,'linear');
+                      }
+                      else{
+                        $("#part4").fadeIn(1500 ,'linear');
+                        $("#part3").fadeIn(1500 ,'linear');
+                      }
+                    }
+                    function CheckNo2(sender){
+                      if(!isNaN(sender.value)){
+                          if(sender.value > 6 )
+                              sender.value = 6;
+                          if(sender.value < 4 )
+                              sender.value = 4;
+                      }else{
+                            sender.value = 4;
+                      }
+                      if (sender.value==5) {
+                        $("#part5").fadeIn(1500 ,'linear');//To Show
+                        $("#part6").fadeIn(1500 ,'linear');
+                        $("#part7").fadeIn(1500 ,'linear');
+                        $("#part8").fadeIn(1500 ,'linear');
+                        $("#part9").fadeIn(1500 ,'linear');
+                        $("#part10").fadeOut(900 ,'linear');
+                      }
+                      else if (sender.value==6){
+                        $("#part5").fadeIn(1500 ,'linear');//To Show
+                        $("#part6").fadeIn(1500 ,'linear');
+                        $("#part7").fadeIn(1500 ,'linear');
+                        $("#part8").fadeIn(1500 ,'linear');
+                        $("#part9").fadeIn(1500 ,'linear');
+                        $("#part10").fadeIn(1500 ,'linear');
+                      }
+                      else{
+                        $("#part5").fadeIn(1500 ,'linear');//To Show
+                        $("#part6").fadeIn(1500 ,'linear');
+                        $("#part7").fadeIn(1500 ,'linear');
+                        $("#part8").fadeIn(1500 ,'linear');
+                        $("#part9").fadeOut(900 ,'linear');
+                        $("#part10").fadeOut(900 ,'linear');
+                      }
+                    }
+                    function CheckNo3(sender){
+                      if(!isNaN(sender.value)){
+                          if(sender.value > 2 )
+                              sender.value = 2;
+                          if(sender.value < 1 )
+                              sender.value = 1;
+                      }else{
+                            sender.value = 1;
+                      }
+                      if (sender.value==1) {
+                        $("#part11").fadeIn(1500 ,'linear');//To Show
+                        $("#part12").fadeOut(900 ,'linear');
+                      }
+                      else{
+                        $("#part12").fadeIn(1500 ,'linear');
+                        $("#part11").fadeIn(1500 ,'linear');
+                      }
+                    }
+                    function CheckNo4(sender){
+                      if(!isNaN(sender.value)){
+                          if(sender.value > 6 )
+                              sender.value = 6;
+                          if(sender.value < 4 )
+                              sender.value = 4;
+                      }else{
+                            sender.value = 4;
+                      }
+                      if (sender.value==5) {
+                        $("#part13").fadeIn(1500 ,'linear');//To Show
+                        $("#part14").fadeIn(1500 ,'linear');
+                        $("#part15").fadeIn(1500 ,'linear');
+                        $("#part16").fadeIn(1500 ,'linear');
+                        $("#part17").fadeIn(1500 ,'linear');
+                        $("#part18").fadeOut(900 ,'linear');
+                      }
+                      else if (sender.value==6){
+                        $("#part13").fadeIn(1500 ,'linear');//To Show
+                        $("#part14").fadeIn(1500 ,'linear');
+                        $("#part15").fadeIn(1500 ,'linear');
+                        $("#part16").fadeIn(1500 ,'linear');
+                        $("#part17").fadeIn(1500 ,'linear');
+                        $("#part18").fadeIn(1500 ,'linear');
+                      }
+                      else{
+                        $("#part13").fadeIn(1500 ,'linear');//To Show
+                        $("#part14").fadeIn(1500 ,'linear');
+                        $("#part15").fadeIn(1500 ,'linear');
+                        $("#part16").fadeIn(1500 ,'linear');
+                        $("#part17").fadeOut(900 ,'linear');
+                        $("#part18").fadeOut(900 ,'linear');
+                      }
+                    }
+                      function CheckNo5(sender){
+                      if(!isNaN(sender.value)){
+                          if(sender.value > 2 )
+                              sender.value = 2;
+                          if(sender.value < 1 )
+                              sender.value = 1;
+                      }else{
+                            sender.value = 1;
+                      }
+                      if (sender.value==1) {
+                        $("#part19").fadeIn(1500 ,'linear');//To Show
+                        $("#part20").fadeOut(900 ,'linear');
+                      }
+                      else{
+                        $("#part20").fadeIn(1500 ,'linear');
+                        $("#part19").fadeIn(1500 ,'linear');
+                      }
+                    }
+                    function CheckNo11(sender){
+                      if(!isNaN(sender.value)){
+                          if(sender.value > 4 )
+                              sender.value = 4;
+                          if(sender.value < 2 )
+                              sender.value = 2;
+                      }else{
+                            sender.value = 2;
+                      }
+                      if (sender.value==2) {
+                        $("#part23").fadeIn(1500 ,'linear');//To Show
+                        $("#part24").fadeIn(1500 ,'linear');
+                        $("#part25").fadeOut(900 ,'linear');
+                        $("#part26").fadeOut(900 ,'linear');
+                      }
+                      else if (sender.value==3){
+                        $("#part23").fadeIn(1500 ,'linear');//To Show
+                        $("#part24").fadeIn(1500 ,'linear');
+                        $("#part25").fadeIn(1500 ,'linear');
+                        $("#part26").fadeOut(900 ,'linear');
+                      }
+                      else{
+                        $("#part23").fadeIn(1500 ,'linear');//To Show
+                        $("#part24").fadeIn(1500 ,'linear');
+                        $("#part25").fadeIn(1500 ,'linear');
+                        $("#part26").fadeIn(1500 ,'linear');
+                      }
+                    }
+                    function CheckNo14(sender){
+                      if(!isNaN(sender.value)){
+                          if(sender.value > 2 )
+                              sender.value = 2;
+                          if(sender.value < 1 )
+                              sender.value = 1;
+                      }else{
+                            sender.value = 1;
+                      }
+                      if (sender.value==1) {
+                        $("#part29").fadeIn(1500 ,'linear');//To Show
+                        $("#part30").fadeOut(900 ,'linear');
+                      }
+                      else{
+                        $("#part30").fadeIn(1500 ,'linear');
+                        $("#part29").fadeIn(1500 ,'linear');
+                      }
+                  }
+                  function CheckNo17(sender){
+                      if(!isNaN(sender.value)){
+                          if(sender.value > 2 )
+                              sender.value = 2;
+                          if(sender.value < 1 )
+                              sender.value = 1;
+                      }else{
+                            sender.value = 1;
+                      }
+                      if (sender.value==1) {
+                        $("#part38").fadeIn(1500 ,'linear');//To Show
+                        $("#part39").fadeOut(900 ,'linear');
+                      }
+                      else{
+                        $("#part39").fadeIn(1500 ,'linear');
+                        $("#part38").fadeIn(1500 ,'linear');
+                      }
+                  }
+                  function CheckNo19(sender){
+                      if(!isNaN(sender.value)){
+                          if(sender.value > 6 )
+                              sender.value = 6;
+                          if(sender.value < 4 )
+                              sender.value = 4;
+                      }else{
+                            sender.value = 4;
+                      }
+                      if (sender.value==5) {
+                        $("#part46").fadeIn(1500 ,'linear');//To Show
+                        $("#part47").fadeIn(1500 ,'linear');
+                        $("#part48").fadeIn(1500 ,'linear');
+                        $("#part49").fadeIn(1500 ,'linear');
+                        $("#part50").fadeIn(1500 ,'linear');
+                        $("#part51").fadeOut(900 ,'linear');
+                      }
+                      else if (sender.value==6){
+                        $("#part46").fadeIn(1500 ,'linear');//To Show
+                        $("#part47").fadeIn(1500 ,'linear');
+                        $("#part48").fadeIn(1500 ,'linear');
+                        $("#part49").fadeIn(1500 ,'linear');
+                        $("#part50").fadeIn(1500 ,'linear');
+                        $("#part51").fadeIn(1500 ,'linear');
+                      }
+                      else{
+                        $("#part46").fadeIn(1500 ,'linear');//To Show
+                        $("#part47").fadeIn(1500 ,'linear');
+                        $("#part48").fadeIn(1500 ,'linear');
+                        $("#part49").fadeIn(1500 ,'linear');
+                        $("#part50").fadeOut(900 ,'linear');
+                        $("#part51").fadeOut(900 ,'linear');
+                      }
+                    }
+                    function CheckNo20(sender){
+                      if(!isNaN(sender.value)){
+                          if(sender.value > 4 )
+                              sender.value = 4;
+                          if(sender.value < 2 )
+                              sender.value = 2;
+                      }else{
+                            sender.value = 2;
+                      }
+                      if (sender.value==2) {
+                        $("#part52").fadeIn(1500 ,'linear');//To Show
+                        $("#part53").fadeIn(1500 ,'linear');
+                        $("#part54").fadeOut(900 ,'linear');
+                        $("#part55").fadeOut(900 ,'linear');
+                      }
+                      else if (sender.value==3){
+                        $("#part52").fadeIn(1500 ,'linear');//To Show
+                        $("#part53").fadeIn(1500 ,'linear');
+                        $("#part54").fadeIn(1500 ,'linear');
+                        $("#part55").fadeOut(900 ,'linear');
+                      }
+                      else{
+                        $("#part52").fadeIn(1500 ,'linear');//To Show
+                        $("#part53").fadeIn(1500 ,'linear');
+                        $("#part54").fadeIn(1500 ,'linear');
+                        $("#part55").fadeIn(1500 ,'linear');
+                      }
+                    }
+                    function CheckNo21(sender){
+                      if(!isNaN(sender.value)){
+                          if(sender.value > 2 )
+                              sender.value = 2;
+                          if(sender.value < 1 )
+                              sender.value = 1;
+                      }else{
+                            sender.value = 1;
+                      }
+                      if (sender.value==1) {
+                        $("#part56").fadeIn(1500 ,'linear');//To Show
+                        $("#part57").fadeOut(900 ,'linear');
+                      }
+                      else{
+                        $("#part57").fadeIn(1500 ,'linear');
+                        $("#part56").fadeIn(1500 ,'linear');
+                      }
+                  }
+                  function onCheckboxChanged(checked){
+                  if(checked)
+                  {
+                  $("#hiddenRow").fadeIn(1500 ,'linear');
+                  $("#no").fadeIn(1500 ,'linear');
+                  $("#no1").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow").fadeOut(900 ,'linear');
+                  $("#part1").fadeOut(900 ,'linear');
+                  $("#part2").fadeOut(900 ,'linear');
+                  $("#no").fadeOut(900 ,'linear');
+                  $("#no1").fadeOut(900 ,'linear');
+                  }
+                  }
+                  function onCheckboxChanged1(checked){
+                  if(checked)
+                  {
+                  $("#hiddenRow1").fadeIn(1500 ,'linear');
+                  $("#no33").fadeIn(1500 ,'linear');
+                  $("#no2").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow1").fadeOut(900 ,'linear');
+                  $("#part3").fadeOut(900 ,'linear');
+                  $("#part4").fadeOut(900 ,'linear');
+                  $("#no33").fadeOut(900 ,'linear');
+                  $("#no2").fadeOut(900 ,'linear');
+                  }
+                  }
+                  function onCheckboxChanged2(checked){
+                  if(checked)
+                  {
+                  $("#hiddenRow2").fadeIn(1500 ,'linear');
+                  $("#no34").fadeIn(1500 ,'linear');
+                  $("#no3").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow2").fadeOut(900 ,'linear');
+                  $("#part5").fadeOut(900 ,'linear');
+                  $("#part6").fadeOut(900 ,'linear');
+                  $("#part7").fadeOut(900 ,'linear');
+                  $("#part8").fadeOut(900 ,'linear');
+                  $("#part9").fadeOut(900 ,'linear');
+                  $("#part10").fadeOut(900 ,'linear');
+                  $("#no34").fadeOut(900 ,'linear');
+                  $("#no3").fadeOut(900 ,'linear');}
+                  }
+                  function onCheckboxChanged3(checked){
+                  if(checked){
+                  $("#hiddenRow3").fadeIn(1500 ,'linear');
+                  $("#no35").fadeIn(1500 ,'linear');
+                  $("#no4").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow3").fadeOut(900 ,'linear');
+                  $("#part11").fadeOut(900 ,'linear');
+                  $("#part12").fadeOut(900 ,'linear');
+                  $("#no35").fadeOut(900 ,'linear');
+                  $("#no4").fadeOut(900 ,'linear');
+                  }
+                  }
+                  function onCheckboxChanged4(checked){
+                  if(checked){
+                  $("#hiddenRow4").fadeIn(1500 ,'linear');
+                  $("#no5").fadeIn(1500 ,'linear');
+                  $("#no6").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow4").fadeOut(900 ,'linear');
+                  $("#part13").fadeOut(900 ,'linear');
+                  $("#part14").fadeOut(900 ,'linear');
+                  $("#part15").fadeOut(900 ,'linear');
+                  $("#part16").fadeOut(900 ,'linear');
+                  $("#part17").fadeOut(900 ,'linear');
+                  $("#part18").fadeOut(900 ,'linear');
+                  $("#no5").fadeOut(900 ,'linear');
+                  $("#no6").fadeOut(900 ,'linear');}
+                  }
+                  function onCheckboxChanged5(checked){
+                  if(checked)
+                  {
+                  $("#hiddenRow5").fadeIn(1500 ,'linear');
+                  $("#no7").fadeIn(1500 ,'linear');
+                  $("#no8").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow5").fadeOut(900 ,'linear');
+                  $("#part19").fadeOut(900 ,'linear');
+                  $("#part20").fadeOut(900 ,'linear');
+                  $("#no7").fadeOut(900 ,'linear');
+                  $("#no8").fadeOut(900 ,'linear');
+                  }
+                  }
+                  function onCheckboxChanged6(checked){
+                  if(checked){
+                  $("#hiddenRow6").fadeIn(1500 ,'linear');
+                  $("#no9").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow6").fadeOut(900 ,'linear');
+                  $("#no9").fadeOut(900 ,'linear');
+                  }
+                  }
+                  function onCheckboxChanged7(checked){
+                  if(checked)
+                  {
+                  $("#hiddenRow7").fadeIn(1500 ,'linear');
+                  $("#part21").fadeIn(900,'linear');
+                  $("#part22").fadeIn(900,'linear');
+                  $("#no10").fadeIn(1500 ,'linear');
+                  $("#no11").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow7").fadeOut(900 ,'linear');
+                  $("#part21").fadeOut(900,'linear');
+                  $("#part22").fadeOut(900,'linear');
+                  $("#no10").fadeOut(900 ,'linear');
+                  $("#no11").fadeOut(900 ,'linear');
+                  }
+                  }
+                  function onCheckboxChanged8(checked){
+                  if(checked){
+                  $("#hiddenRow8").fadeIn(1500 ,'linear');
+                  $("#no12").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow8").fadeOut(900 ,'linear');
+                  $("#no12").fadeOut(900 ,'linear');
+                  }
+                  }
+                  function onCheckboxChanged9(checked){
+                  if(checked){
+                  $("#hiddenRow9").fadeIn(1500 ,'linear');
+                  $("#no13").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow9").fadeOut(900 ,'linear');
+                  $("#no13").fadeOut(900 ,'linear');
+                  }
+                  }
+                  function onCheckboxChanged10(checked){
+                  if(checked){
+                  $("#hiddenRow10").fadeIn(1500 ,'linear');
+                  $("#no14").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow10").fadeOut(900 ,'linear');
+                  $("#no14").fadeOut(900 ,'linear');
+                  }
+                  }
+                  function onCheckboxChanged11(checked){
+                  if(checked){
+                  $("#hiddenRow11").fadeIn(1500 ,'linear');
+                  $("#no15").fadeIn(1500 ,'linear');
+                  $("#no16").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow11").fadeOut(900 ,'linear');
+                  $("#no15").fadeOut(900 ,'linear');
+                  $("#no16").fadeOut(900 ,'linear');
+                  }
+                  }
+                  function onCheckboxChanged12(checked){
+                  if(checked){
+                  $("#hiddenRow12").fadeIn(1500 ,'linear');
+                  $("#no17").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow12").fadeOut(900 ,'linear');
+                  $("#no17").fadeOut(900 ,'linear');
+                  }
+                  }
+                  function onCheckboxChanged13(checked){
+                  if(checked)
+                  {
+                  $("#hiddenRow13").fadeIn(1500 ,'linear');
+                  $("#part27").fadeIn(900,'linear');
+                  $("#part28").fadeIn(900,'linear');
+                  $("#no18").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow13").fadeOut(900 ,'linear');
+                  $("#part27").fadeOut(900,'linear');
+                  $("#part28").fadeOut(900,'linear');
+                  $("#no18").fadeOut(900 ,'linear');
+                  }
+                  }
+                  function onCheckboxChanged14(checked){
+                  if(checked)
+                  {
+                  $("#hiddenRow14").fadeIn(1500 ,'linear');
+                  $("#no19").fadeIn(1500 ,'linear');
+                  $("#no20").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow14").fadeOut(900 ,'linear');
+                  $("#part29").fadeOut(900 ,'linear');
+                  $("#part30").fadeOut(900 ,'linear');
+                  $("#no19").fadeOut(900 ,'linear');
+                  $("#no20").fadeOut(900 ,'linear');}
+                  }
+                  function onCheckboxChanged15(checked){
+                  if(checked)
+                  {
+                  $("#hiddenRow15").fadeIn(1500 ,'linear');
+                  $("#part31").fadeIn(900,'linear');
+                  $("#part32").fadeIn(900,'linear');
+                  $("#part33").fadeIn(900,'linear');
+                  $("#part34").fadeIn(900,'linear');
+                  $("#no21").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow15").fadeOut(900 ,'linear');
+                  $("#part31").fadeOut(900,'linear');
+                  $("#part32").fadeOut(900,'linear');
+                  $("#part33").fadeOut(900,'linear');
+                  $("#part34").fadeOut(900,'linear');
+                  $("#no21").fadeOut(900 ,'linear');
+                  }
+                  }
+                  function onCheckboxChanged16(checked){
+                  if(checked)
+                  {
+                  $("#hiddenRow16").fadeIn(1500 ,'linear');
+                  $("#part35").fadeIn(900,'linear');
+                  $("#part36").fadeIn(900,'linear');
+                  $("#part37").fadeIn(900,'linear');
+                  $("#no22").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow16").fadeOut(900 ,'linear');
+                  $("#part35").fadeOut(900,'linear');
+                  $("#part36").fadeOut(900,'linear');
+                  $("#part37").fadeOut(900,'linear');
+                  $("#no22").fadeOut(900 ,'linear');
+                  }
+                  }
+                  function onCheckboxChanged17(checked){
+                  if(checked){
+                  $("#hiddenRow17").fadeIn(1500 ,'linear');
+                  $("#no23").fadeIn(1500 ,'linear');
+                  $("#no24").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow17").fadeOut(900 ,'linear');
+                  $("#part38").fadeOut(900 ,'linear');
+                  $("#part39").fadeOut(900 ,'linear');
+                  $("#no23").fadeOut(900 ,'linear');
+                  $("#no24").fadeOut(900 ,'linear');}
+                  }
+                  function onCheckboxChanged18(checked){
+                  if(checked)
+                  {
+                  $("#hiddenRow18").fadeIn(1500 ,'linear');
+                  $("#part40").fadeIn(900,'linear');
+                  $("#part41").fadeIn(900,'linear');
+                  $("#part42").fadeIn(900,'linear');
+                  $("#part43").fadeIn(900,'linear');
+                  $("#part44").fadeIn(900,'linear');
+                  $("#part45").fadeIn(900,'linear');
+                  $("#no25").fadeIn(1500 ,'linear');
+                  $("#no26").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow18").fadeOut(900 ,'linear');
+                  $("#part40").fadeOut(900,'linear');
+                  $("#part41").fadeOut(900,'linear');
+                  $("#part42").fadeOut(900,'linear');
+                  $("#part43").fadeOut(900,'linear');
+                  $("#part44").fadeOut(900,'linear');
+                  $("#part45").fadeOut(900,'linear');
+                  $("#no25").fadeOut(900 ,'linear');
+                  $("#no26").fadeOut(900 ,'linear');
+                  }
+                  }
+                  function onCheckboxChanged19(checked){
+                  if(checked){
+                  $("#hiddenRow19").fadeIn(1500 ,'linear');
+                  $("#no27").fadeIn(1500 ,'linear');
+                  $("#no28").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow19").fadeOut(900 ,'linear');
+                  $("#part46").fadeOut(900 ,'linear');
+                  $("#part47").fadeOut(900 ,'linear');
+                  $("#part48").fadeOut(900 ,'linear');
+                  $("#part49").fadeOut(900 ,'linear');
+                  $("#part50").fadeOut(900 ,'linear');
+                  $("#part51").fadeOut(900 ,'linear');
+                  $("#no27").fadeOut(900 ,'linear');
+                  $("#no28").fadeOut(900 ,'linear');}
+                  }
+                  function onCheckboxChanged20(checked){
+                  if(checked){
+                  $("#hiddenRow20").fadeIn(1500 ,'linear');
+                  $("#no29").fadeIn(1500 ,'linear');
+                  $("#no30").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow20").fadeOut(900 ,'linear');
+                  $("#no29").fadeOut(900 ,'linear');
+                  $("#no30").fadeOut(900 ,'linear');
+                  }
+                  }
+                  function onCheckboxChanged21(checked){
+                  if(checked){
+                  $("#hiddenRow21").fadeIn(1500 ,'linear');
+                  $("#no31").fadeIn(1500 ,'linear');
+                  $("#no32").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow21").fadeOut(900 ,'linear');
+                  $("#part56").fadeOut(900 ,'linear');
+                  $("#part57").fadeOut(900 ,'linear');
+                  $("#no31").fadeOut(900 ,'linear');
+                  $("#no32").fadeOut(900 ,'linear');}
+                  }
+                  function onCheckboxChanged22(checked){
+                  if(checked){
+                  $("#hiddenRow22").fadeIn(1500 ,'linear');
+                  }
+                  else {$("#hiddenRow22").fadeOut(900 ,'linear');
+                  }
+                  }
+
+                  function closetoggle(){
+                     $("#panel").fadeOut(900 ,'linear');
+                  }
+               </script>
+               <br>
+         </div>
+            <input type="checkbox" id="demo-copy" name="demo-copy" required >
+            <label for="demo-copy"  id="flip" style="font-weight:bold;">We agree to follow the general rules and the rules of the events that we participate at tarang 19 and promise to uphold team spirit throughout the event.<font style="font-weight:bold;">*</font></label>
+            <br><br>
+            <div id="panel">
+            <ul>
+                  <li>Participation is restricted to class 11 and 12 students</li>
+                  <li>Participants have to be present at the venue by 8.00 AM</li>
+                  <li>On the spot registrations for the events will be held between 8.30 A.M and 9.15 A.M</li>
+                  <li>Bonafide certificate from the school stating the list of participants and accompanying teachers is a must.</li>
+                  <li>Vulgarity of any form will not be entertained.</li>
+                  <li>The judges' decision will be the final.</li>
+                  <li>Management is not responsible for any loss or damage of the participants' or accompanying teachers' personal belongings.</li>
+                  <li>Students are supposed to come in their respective school uniforms.</li>
+               </ul>
+               </div>
+            
+            <input type="submit" value="submit" class="primary" name="register" />
+            &nbsp;&nbsp;<input type="reset" value="Reset" onclick="closetoggle()" />
+         </form>
+         </div>
+
+         <!-- Scripts -->
+         <script src="assets/js/jquery.min.js"></script>
+         <script src="assets/js/browser.min.js"></script>
+         <script src="assets/js/breakpoints.min.js"></script>
+         <script src="assets/js/util.js"></script>
+         <script src="assets/js/main.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+function redirect(){
+   document.location.href="thanks.html"
+}
+</script>
+      </div>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script  src="assets/js/index.js"></script>
+      <?php
+      if(isset($_POST['register'])){
+          ini_set( 'display_errors', 1 );
+         error_reporting( E_ALL );
+         $a1=$_POST['a1'];
+         $a2=$_POST['a2'];
+         $a3=$_POST['a3'];
+         $a4=$_POST['a4'];
+         $a5=$_POST['a5'];
+         $a6=$_POST['a6'];
+         $email=$_POST['a7'];
+         $from = "no-reply@tarang19.com";
+         $to='registrations@tarang19.com';
+         $subject="From ".$a1;
+         if($a2=="" && $a4==""){
+            $message1="SCHOOL : ".$a1."\n"."STUDENT INCHARGE : ".$a4."\n"."TEACHER INCHARGE : ".$a5."\n"."CONTACT NUMBER OF TEACHER INCHARGE : ".$a6."\n"."EMAIL : ".$email."\n";
+         }
+         else if($a4==""){
+            $message1="SCHOOL : ".$a1."\n"."STUDENT INCHARGE : ".$a3."\n"."CONTACT NUMBER OF STUDENT INCHARGE : ".$a4."\n"."TEACHER INCHARGE : ".$a5."\n"."CONTACT NUMBER OF TEACHER INCHARGE : ".$a6."\n"."EMAIL : ".$email."\n";
+         }
+         else if($a2=="") {
+            $message1="SCHOOL : ".$a1."\n"."BRANCH : ".$a2."\n"."STUDENT INCHARGE : ".$a3."\n"."TEACHER INCHARGE : ".$a5."\n"."CONTACT NUMBER OF TEACHER INCHARGE : ".$a6."\n"."EMAIL : ".$email."\n";
+         }
+         else{
+            $message1="SCHOOL : ".$a1."\n"."BRANCH : ".$a2."\n"."STUDENT INCHARGE : ".$a3."\n"."CONTACT NUMBER OF STUDENT INCHARGE : ".$a4."\n"."TEACHER INCHARGE : ".$a5."\n"."CONTACT NUMBER OF TEACHER INCHARGE : ".$a6."\n"."EMAIL : ".$email."\n";
+         }
+         $message1="SCHOOL : ".$a1."\n"."BRANCH : ".$a2."\n"."STUDENT INCHARGE : ".$a3."\n"."CONTACT NUMBER OF STUDENT INCHARGE : ".$a4."\n"."TEACHER INCHARGE : ".$a5."\n"."CONTACT NUMBER OF TEACHER INCHARGE : ".$a6."\n"."EMAIL : ".$email."\n";
+         $message2="";
+         if(isset($_POST['greenscreen'])==1){
+            $gsp1=$_POST['gsp1'];
+            $gsp2=$_POST['gsp2'];
+            $message2="\n"."Green Screen : "."\n"."Participant 1 : ".$gsp1."\n"."Participant 2 : ".$gsp2."\n";
+         }
+         $message3="";
+         if(isset($_POST['shipwreck'])==1){
+         $swp1=$_POST['swp1'];
+         $swp2=$_POST['swp2'];
+         $message3="\n"."Ship Wreck : "."\n"."Participant 1 : ".$swp1."\n"."Participant 2 : ".$swp2."\n";
+      }
+         $message4="";
+         if(isset($_POST['adzap'])==1){
+         $azp1=$_POST['azp1'];
+         $azp2=$_POST['azp2'];
+         $azp3=$_POST['azp3'];
+         $azp4=$_POST['azp4'];
+         $azp5=$_POST['azp5'];
+         $azp6=$_POST['azp6'];
+         $message4="\n"."Adzap : "."\n"."Participant 1 : ".$azp1."\n"."Participant 2 : ".$azp2."\n"."Participant 3 : ".$azp3."\n"."Participant 4 : ".$azp4."\n"."Participant 5 : ".$azp5."\n"."Participant 6 : ".$azp6."\n";
+      }  
+         $message5="";
+         if(isset($_POST['blockandtackle'])==1){
+         $btp1=$_POST['btp1'];
+         $btp2=$_POST['btp2'];
+         $message5="\n"."block and Tackle : "."\n"."Participant 1 : ".$btp1."\n"."Participant 2 : ".$btp2."\n";
+      }
+         $message6="";
+         if(isset($_POST['channelsurfing'])==1){
+         $csp1=$_POST['csp1'];
+         $csp2=$_POST['csp2'];
+         $csp3=$_POST['csp3'];
+         $csp4=$_POST['csp4'];
+         $csp5=$_POST['csp5'];
+         $csp6=$_POST['csp6'];
+         $message6="\n"."Channel Surfing : "."\n"."Participant 1 : ".$csp1."\n"."Participant 2 : ".$csp2."\n"."Participant 3 : ".$csp3."\n"."Participant 4 : ".$csp4."\n"."Participant 5 : ".$csp5."\n"."Participant 6 : ".$csp6."\n";
+      }  $message7="";
+         if(isset($_POST['surpriseevent'])==1){
+         $sep1=$_POST['sep1'];
+         $sep2=$_POST['sep2'];
+         $message7="\n"."Surprise Event : "."\n"."Participant 1 : ".$sep1."\n"."Participant 2 : ".$sep2."\n";
+      }  
+         $message8="";
+         if(isset($_POST['jam'])==1){
+         $jamp1=$_POST['jamp1'];
+         $message8="\n"."Jam : "."\n"."Participant 1 : ".$jamp1."\n";
+      }  
+         $message9="";
+         if(isset($_POST['fifa'])==1){
+         $ffp1=$_POST['ffp1'];
+         $ffp2=$_POST['ffp2'];
+         $message9="\n"."Fifa : "."\n"."Participant 1 : ".$ffp1."\n"."Participant 2 : ".$ffp2."\n";
+      }
+         $message10="";
+         $message11="";
+         if(isset($_POST['slamdunk'])==1){
+         $sdbp1=$_POST['sdbp1'];
+         $sdbp2=$_POST['sdbp2'];
+         $sdbp3=$_POST['sdbp3'];
+         $sdbs1=$_POST['sdbs1'];
+         $sdbs2=$_POST['sdbs2'];
+         $sdgp1=$_POST['sdgp1'];
+         $sdgp2=$_POST['sdgp2'];
+         $sdgp3=$_POST['sdgp3'];
+         $sdgs1=$_POST['sdgs1'];
+         $sdgs2=$_POST['sdgs2'];
+         $message10="\n"."Slam Dunk (Boys): "."\n"."Player 1 : ".$sdbp1."\n"."Player 2 : ".$sdbp2."\n"."Player 3 : ".$sdbp3."\n"."Substitute 1 : ".$sdbs1."\n"."Substitute 2 : ".$sdbs2."\n";
+         $message11="\n"."Slam Dunk (Girls): "."\n"."Player 1 : ".$sdgp1."\n"."Player 2 : ".$sdgp2."\n"."Player 3 : ".$sdgp3."\n"."Substitute 1 : ".$sdgs1."\n"."Substitute 2 : ".$sdgs2."\n";}
+
+         $message12="";
+         if(isset($_POST['futsal'])==1){
+         $fsp1=$_POST['fsp1'];
+         $fsp2=$_POST['fsp2'];
+         $fsp3=$_POST['fsp3'];
+         $fsp4=$_POST['fsp4'];
+         $fsp5=$_POST['fsp5'];
+         $fss1=$_POST['fss1'];
+         $fss2=$_POST['fss2'];
+         $fss3=$_POST['fss3'];
+         $message12="\n"."Futsal : "."\n"."Player 1 : ".$fsp1."\n"."Player 2 : ".$fsp2."\n"."Player 3 : ".$fsp3."\n"."Player 4 : ".$fsp4."\n"."Player 5 : ".$fsp5."\n"."Substitute 1 : ".$fss1."\n"."Substitute 2 : ".$fss2."\n"."Substitute 3 : ".$fss3."\n";
+      }
+         $message13="";
+         if(isset($_POST['carnaticmusic'])==1){
+         $stmp1=$_POST['stmp1'];
+         $stmp2=$_POST['stmp2'];
+         $stmp3=$_POST['stmp3'];
+         $stmp4=$_POST['stmp4'];
+         $message13="\n"."Sarvam Thaala Mayam : "."\n"."Participant 1 : ".$stmp1."\n"."Participant 2 : ".$stmp2."\n"."Participant 3 : ".$stmp3."\n"."Participant 4 : ".$stmp4."\n";
+      }
+         $message14="";
+         if(isset($_POST['shortfilm'])==1){
+         $sfp1=$_POST['sfp1'];
+         $sfp2=$_POST['sfp2'];
+         $sfp3=$_POST['sfp3'];
+         $sfp4=$_POST['sfp4'];
+         $sfp5=$_POST['sfp5'];
+         $message14="\n"."Short Film : "."\n"."Participant 1 : ".$sfp1."\n"."Participant 2 : ".$sfp2."\n"."Participant 3 : ".$sfp3."\n"."Participant 4 : ".$sfp4."\n";
+      }
+         $message15="";
+         if(isset($_POST['photography'])==1){
+         $pp1=$_POST['pp1'];
+         $pp2=$_POST['pp2'];
+         $message15="\n"."Photography : "."\n"."Participant 1 : ".$pp1."\n"."Participant 2 : ".$pp2."\n";
+      }
+         $message16="";
+         if(isset($_POST['spinayarn'])==1){      
+         $syp1=$_POST['syp1'];
+         $syp2=$_POST['syp2'];
+         $message16="\n"."Spin Yarn : "."\n"."Participant 1 : ".$syp1."\n"."Participant 2 : ".$syp2."\n";
+         }
+         $message17="";
+         if(isset($_POST['punaaku'])==1){
+         $pup1=$_POST['pup1'];
+         $pup2=$_POST['pup2'];
+         $pup3=$_POST['pup3'];
+         $pup4=$_POST['pup4'];
+         $message17="\n"."Pun-Aaku : "."\n"."Participant 1 : ".$pup1."\n"."Participant 2 : ".$pup2."\n"."Participant 3 : ".$pup3."\n"."Participant 4 : ".$pup4."\n";
+      }
+         $message18="";
+         if(isset($_POST['treasurehunt'])==1){
+         $thp1=$_POST['thp1'];
+         $thp2=$_POST['thp2'];
+         $thp3=$_POST['thp3'];
+         $message18="\n"."Treasure Hunt : "."\n"."Participant 1 : ".$thp1."\n"."Participant 2 : ".$thp2."\n"."Participant 3 : ".$thp3."\n";
+      }
+         $message19="";
+         if(isset($_POST['cricket'])==1){
+         $cp1=$_POST['cp1'];
+         $cp2=$_POST['cp2'];
+         $cp3=$_POST['cp3'];
+         $cp4=$_POST['cp4'];
+         $cp5=$_POST['cp5'];
+         $cp6=$_POST['cp6'];
+         $cp7=$_POST['cp7'];
+         $cp8=$_POST['cp8'];
+         $message19="\n"."Ee Saala Cup Namde : "."\n"."Player 1 : ".$cp1."\n"."Player 2 : ".$cp2."\n"."Player 3 : ".$cp3."\n"."Player 4 : ".$cp4."\n"."Player 5 : ".$cp5."\n"."Player 6 : ".$cp6."\n"."Player 7 : ".$cp7."\n"."Player 8 : ".$cp8."\n";
+      }
+         $message20="";
+         if(isset($_POST['monoacting'])==1){
+         $mp1=$_POST['mp1'];
+         $mp2=$_POST['mp2'];
+         $message20="\n"."Mono Acting : "."\n"."Participant 1 : ".$mp1."\n"."Participant 2 : ".$mp2."\n";
+      }
+         $message21="";
+         if(isset($_POST['stepup'])==1){
+         $sp1=$_POST['sp1'];
+         $sp2=$_POST['sp2'];
+         $sp3=$_POST['sp3'];
+         $sp4=$_POST['sp4'];
+         $sp5=$_POST['sp5'];
+         $sp6=$_POST['sp6'];
+         $message22="\n"."Step Up : "."\n"."Participant 1 : ".$sp1."\n"."Participant 2 : ".$sp2."\n"."Participant 3 : ".$sp3."\n"."Participant 4 : ".$sp4."\n"."Participant 5 : ".$sp5."\n"."Participant 6 : ".$sp6."\n";
+      }
+         $message22="";
+         if(isset($_POST['band'])==1){
+         $bp1=$_POST['bp1'];
+         $bp2=$_POST['bp2'];
+         $bp3=$_POST['bp3'];
+         $bp4=$_POST['bp4'];
+         $bp5=$_POST['bp5'];
+         $bp6=$_POST['bp6'];
+         $message22="\n"."Band : "."\n"."Participant 1 : ".$bp1."\n"."Participant 2 : ".$bp2."\n"."Participant 3 : ".$bp3."\n"."Participant 4 : ".$bp4."\n"."Participant 5 : ".$bp5."\n"."Participant 6 : ".$bp6."\n";
+      }
+         $message23="";
+         if(isset($_POST['memecreation'])==1){
+         $mcp1=$_POST['mcp1'];
+         $mcp2=$_POST['mcp2'];
+         $mcp3=$_POST['mcp3'];
+         $mcp4=$_POST['mcp4'];
+         $message23="\n"."Meme Creation : "."\n"."Participant 1 : ".$mcp1."\n"."Participant 2 : ".$mcp2."\n"."Participant 3 : ".$mcp3."\n"."Participant 4 : ".$mcp4."\n";
+        }
+         $message24="";
+         if(isset($_POST['moviereviews'])==1){
+         $mrp1=$_POST['mrp1'];
+         $mrp2=$_POST['mrp2'];
+         $message24="\n"."Movie Reviews : "."\n"."Participant 1 : ".$mrp1."\n"."Participant 2 : ".$mrp2."\n";
+      }
+         $message25="";
+         if(isset($_POST['creativewriting'])==1){
+         $wdp1=$_POST['wdp1'];
+         $message25="\n"."Creaive Writing : "."\n"."Participant 1 : ".$wdp1."\n";
+      }
+         $message = $message1.$message2.$message3.$message4.$message5.$message6.$message7.$message8.$message9.$message10.$message11.$message12.$message13.$message14.$message15.$message16.$message17.$message18.$message19.$message20.$message21.$message22.$message23.$message24.$message25;
+        $headers="From: ".$email. "\r\n"."BCC: corecommittee@tarang19.com". "\r\n"."BCC: admin@tarang19.com";
+         mail($to,$subject,$message, $headers);
+      }
+         ?>
+   </body>
+</html>
